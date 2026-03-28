@@ -1,4 +1,4 @@
-function contCar(valor){
+function verificar(valor){
     contar = 0;
     cantMayus = 0;
     cantDig = 0;
@@ -18,9 +18,9 @@ function contCar(valor){
     }
 
     if (contar>=8 && cantMayus!=0 && cantDig!=0){
-        alert('Contrasena valida')
+        alert('Contraseña valida')
     }else{
-        alert('Contrasena invalida')
+        alert('Contraseña invalida')
     }
 
 console.log('Cantidad de caracteres: '+contar);
