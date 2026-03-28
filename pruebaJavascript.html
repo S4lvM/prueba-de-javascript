@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de eventos con JS</title>
+</head>
+<body>
+        <p>La verificación de la contraseña se mostrara por ventana emergente</p>
+        <fieldset style="width: 330px; font-family: arial;">
+            <legend>Validación</legend>
+            <form name="formulario">
+                <label>Ingrese la contraseña: </label>
+                <input type="text" name="oracion" style="width: 95%;">
+                <input type="button" onclick="contCar(formulario.oracion.value)" value="Aceptar"><br>
+                <br><label>La contraseña debe cumplir con los siguientes requisitos:</label>
+                <p>
+                    <ul>
+                        <li>Al menos 8 caracteres.</li>
+                        <li>Al menos una letra mayuscula.</li>
+                        <li>Al menos un digito.</li>
+                    </ul>
+                </p>
+            </form>
+        </fieldset>
+
+        <script src="verificarContraseña.js"></script>
+</body>
+</html>
